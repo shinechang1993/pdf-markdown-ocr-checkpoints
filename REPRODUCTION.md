@@ -10,6 +10,10 @@ Marker replay used the existing isolated Marker environment and local pinned mod
 
 ## Independent machine
 
-A public standard Windows GitHub Actions runner can execute the three light routes from a new VM. The workflow does not run Marker and cannot establish a four-route clean-machine pass. Read the actual Actions run before making any claim about its result. No independent-machine result is claimed in this initial record.
+The [actual public Actions run 39769924829](https://github.com/shinechang1993/pdf-markdown-ocr-checkpoints/actions/runs/39769924829), commit5a86c24e73c8896b4f0b3cc2844a0269c943dcd3, ran on a fresh standard windows-2025 VM with official Windows Python3.12.10, distinct from the local bundled3.12.14 runtime. Job119794599015 completed successfully on22October2026 (11:21:14–11:22:01 UTC). The downloaded job log contains all three actual converter executions, their raw Markdown, per-process exit0 records, SHA256 values and final dependency freeze. All three output hashes matched the historical files. This is a three-light-route independent-machine pass, not a four-route pass; Marker was not run on that VM.
+
+The first two workflow attempts failed at Python setup because the requested3.12.14 Windows build was unavailable on windows-2025; converter steps were skipped. These were environment failures, not conversion results. The workflow now explicitly selects the available official3.12.10 Windows build.
+
+An initial local clone exposed Git's Windows automatic newline conversion on this ASCII-compatible PDF and raw Markdown. Added .gitattributes to mark the source PDF and historical raw files as byte-preserved. A subsequent unauthenticated clone passed every published source/output hash check. No historical file was rewritten.
 
 SHA256 checks freeze published bytes, not general extraction accuracy. One synthetic English sample does not establish performance on other documents or languages.
