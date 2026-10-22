@@ -1,0 +1,21 @@
+name: Reproduce light OCR routes
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  light:
+    runs-on: windows-2025
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.12.14'
+      - name: Run three actual converters in a fresh environment
+        shell: pwsh
+        run: |
+          python -m venv .venv-ci
+          .venv-ci/Scripts/python.exe ci_run.py
