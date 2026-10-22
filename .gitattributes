@@ -1,0 +1,6 @@
+# Preserve specimen and historical output bytes on every platform.
+*.pdf -text
+*.png -text
+historical-*.md -text
+*.py text eol=lf
+*.yml text eol=lf
