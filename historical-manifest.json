@@ -1,0 +1,61 @@
+{
+  "original_date": "2026-10-21",
+  "specimen_created": "2026-10-20",
+  "sample_reused": true,
+  "runs": [
+    {
+      "date_utc": "2026-10-21T16:01:53.476986+00:00",
+      "route": "markitdown",
+      "source_sha256": "e6a345602d61f47d81400c4dd23b12d7a20dcbda91e81574ad35c8b8d3f0caa8",
+      "version": "0.1.8",
+      "mode": "MarkItDown(enable_plugins=False).convert_local; no LLM client",
+      "bytes": 296,
+      "output_sha256": "667e0b45026d56135a86f91e6dd04ad6262481ac2ac7c4f856d40c2bf6ee2960",
+      "page1_checkpoint": true,
+      "page2_checkpoint": false,
+      "output_file": "historical-markitdown.md",
+      "converter_returned": true
+    },
+    {
+      "date_utc": "2026-10-21T16:01:54.824522+00:00",
+      "route": "pymupdf4llm",
+      "source_sha256": "e6a345602d61f47d81400c4dd23b12d7a20dcbda91e81574ad35c8b8d3f0caa8",
+      "version": "2.0",
+      "mode": "pymupdf4llm.to_markdown(path), default options incl use_ocr=True, eng",
+      "bytes": 308,
+      "output_sha256": "ba25cb8f9dfa9c5c95321e14e9d229dcbc05b405ae691c42096873d94d3260c9",
+      "page1_checkpoint": true,
+      "page2_checkpoint": false,
+      "output_file": "historical-pymupdf-no-ocr.md",
+      "converter_returned": true
+    },
+    {
+      "date_utc": "2026-10-21T16:03:17.179200+00:00",
+      "route": "pymupdf4llm-with-rapidocr",
+      "pymupdf4llm": "2.0",
+      "rapidocr": "3.10.0",
+      "mode": "same to_markdown default options after installing optional RapidOCR; separate follow-up run",
+      "source_sha256": "e6a345602d61f47d81400c4dd23b12d7a20dcbda91e81574ad35c8b8d3f0caa8",
+      "bytes": 624,
+      "output_sha256": "41337b557a4704b1d17f622c50eae20fe5b926696a27b0a16846e1bf37ebc1eb",
+      "page1_checkpoint": true,
+      "page2_checkpoint": true,
+      "output_file": "historical-pymupdf-rapidocr.md",
+      "converter_returned": true
+    },
+    {
+      "date_utc": "2026-10-21T16:08:30.687327+00:00",
+      "route": "marker-pdf",
+      "version": "2.0.0",
+      "source_sha256": "e6a345602d61f47d81400c4dd23b12d7a20dcbda91e81574ad35c8b8d3f0caa8",
+      "mode": "Python PdfConverter, CPU fast, OCR enabled, use_llm=False; llama.cpp b11796 CPU, concurrency=1, threads=2",
+      "bytes": 436,
+      "output_sha256": "9d9a9be5b49d764fe81ee98097b150ca79c7e42065df6cb0561fc9ea9322facb",
+      "page1_checkpoint": true,
+      "page2_checkpoint": true,
+      "output_file": "historical-marker.md",
+      "converter_returned": true,
+      "process_caveat": "Outer PowerShell session exit1, empty redirected console log; cause unknown. Not a clean-exit or speed claim."
+    }
+  ]
+}

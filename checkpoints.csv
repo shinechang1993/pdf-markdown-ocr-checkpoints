@@ -1,0 +1,5 @@
+output_file,page1_CEDAR_BLUE_42,page2_MAPLE_GREEN_73,bytes,sha256,process_caveat
+historical-markitdown.md,True,False,296,667e0b45026d56135a86f91e6dd04ad6262481ac2ac7c4f856d40c2bf6ee2960,
+historical-pymupdf-no-ocr.md,True,False,308,ba25cb8f9dfa9c5c95321e14e9d229dcbc05b405ae691c42096873d94d3260c9,
+historical-pymupdf-rapidocr.md,True,True,624,41337b557a4704b1d17f622c50eae20fe5b926696a27b0a16846e1bf37ebc1eb,
+historical-marker.md,True,True,436,9d9a9be5b49d764fe81ee98097b150ca79c7e42065df6cb0561fc9ea9322facb,"Outer PowerShell session exit1, empty redirected console log; cause unknown. Not a clean-exit or speed claim."

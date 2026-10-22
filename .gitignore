@@ -1,0 +1,7 @@
+.venv*/
+.model-cache/
+runs/
+regenerated/
+__pycache__/
+*.log
+.env
