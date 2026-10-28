@@ -1,5 +1,7 @@
 # PDF to Markdown: local OCR checkpoints
 
+Try [PDFMarkdownKit](https://pdfmarkdownkit.com/) in your browser, or inspect the original sample and raw outputs below. Maintained by the PDFMarkdownKit site owner.
+
 A small, inspectable experiment for a deceptively simple question: did a converter read the scanned page, or just return plausible Markdown from the text page?
 
 This repository contains an **original two-page synthetic English PDF**, four untouched historical Markdown outputs, checkpoint checks, pinned Python dependencies and local run scripts. It is not a broad accuracy ranking or a hosted conversion service. No private documents are included.
@@ -21,6 +23,12 @@ This repository contains an **original two-page synthetic English PDF**, four un
 **Historical Marker caveat:** the converter returned and saved both pages' prose, but the outer PowerShell session subsequently ended with exit1 and an empty redirected console log. The cause is unknown. This is not a clean-process-exit claim or a speed comparison. An October22 replay again saved identical Markdown but left no completed supervisor record: the outer session exited1. Child exit and root cause remain unknown. The harness now journals its start before waiting; missing completion is explicitly incomplete. Historical files are never overwritten.
 
 A missing exact phrase is a prompt to inspect the page, not proof the whole page vanished: OCR can misspell text. Read the full outputs and compare surrounding sentences. Here, direct reading confirmed page 2 prose was absent in the first two historical outputs. An OCR dependency missing from one environment is not proof that a library cannot OCR.
+
+## Optional browser task feedback
+
+If your real workflow involves English PDFs and Markdown, try [the browser tool](https://pdfmarkdownkit.com/) with this repository's synthetic sample before sharing any private document. Check both pages, then try copying or downloading the Markdown for your notes. English OCR and Markdown output are the current scope; this is not searchable-PDF export.
+
+Tell us where you became unsure or stopped, what you expected, and what happened. [Open a safe task-feedback issue](https://github.com/shinechang1993/pdf-markdown-ocr-checkpoints/issues/new?template=browser-task-feedback.md). GitHub issues are public: do not attach confidential files or personal text. Feedback is optional; no payment, reply or completion is assumed. This is a request for qualitative observations, not a claim of measured accuracy or conversion rate.
 
 ## Run locally (Windows x64, Python 3.12)
 
